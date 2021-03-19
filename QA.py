@@ -9,7 +9,7 @@ from dwave.system.samplers import DWaveSampler
 import time
 
 TYPE = 'SA'
-data_file = 'a'
+data_file = 'banknote_1'
 
 # Select the solver
 if(TYPE == 'HQPU'):
@@ -104,11 +104,6 @@ training_data = np.loadtxt('./data/{}.txt'.format(data_file), delimiter=',')\
 for i in range(N+validation_pts):
     if(training_data[i][-1] == 0):
         training_data[i][-1] = -1
-    if(data_file == 'h'):
-        if(training_data[i][-1] == 1):
-            training_data[i][-1] = -1
-        if(training_data[i][-1] == 2):
-            training_data[i][-1] = 1
 
 data = training_data[:N+validation_pts, :2]
 t = training_data[:N + validation_pts, -1]
