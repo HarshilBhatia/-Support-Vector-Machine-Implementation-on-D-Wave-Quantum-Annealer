@@ -17,7 +17,7 @@ If you find our work useful for your research, please consider the following cit
 ```
 
 ## Running the Code
-Execute the main.py file.
+Execute the Main.py file.
 
 ## Data
 We have used the IRIS Dataset ([link](https://archive.ics.uci.edu/ml/datasets/iris)) and Banknote Authentication Dataset ([link](https://archive.ics.uci.edu/ml/datasets/banknote+authentication)).
